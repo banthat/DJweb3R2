@@ -19,3 +19,18 @@ def hnypage(request):
 
 def homepage(request):
     return render(request, 'HomePage.html')
+
+def myData(request):
+    name = "Mr. Banthat"
+    surname = "Upara"
+    gender = "Male"
+    education = "ปรัญญาตรี ปีที่ 3"
+    status = "Student"
+    work = "RMUTI"
+    # return render(request, 'myData.html',
+    #               {'name': name, 'surname': surname, 'gender': gender,
+    #                'education': education, 'status': status, 'work': work})
+
+    context = {'name': name, 'surname': surname, 'gender': gender,
+               'education': education, 'status': status, 'work': work}
+    return render(request, 'myData.html', context)

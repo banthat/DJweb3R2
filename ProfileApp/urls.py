@@ -8,4 +8,5 @@ urlpatterns = [
     path('secondpage', views.secondpage, name='secondpage'),
     path('thirdpage', views.thirdpage, name='thirdpage'),
     path('hnypage', views.hnypage, name='hnypage'),
+    path('myData', views.myData, name='mydata'),
 ]
