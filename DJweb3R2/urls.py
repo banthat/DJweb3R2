@@ -19,8 +19,8 @@ from ProfileApp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('', include('ProfileApp.urls')),
-    path('', views.homepage, name="homepage"),
+    path('', include('ProfileApp.urls')),
+    # path('', views.homepage, name="homepage"),
     path('productapp/', include('ProductApp.urls')),
     path('productapp/', include('ProductApp.urls')),
 ]
