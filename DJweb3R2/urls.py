@@ -20,7 +20,7 @@ from ProfileApp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     # path('', include('ProfileApp.urls')),
-    path('', views.homepage, name="homepage"),
+    path('', views.home, name="home"),
     path('productapp/', include('ProductApp.urls')),
     path('profileapp/', include('ProfileApp.urls')),
 ]

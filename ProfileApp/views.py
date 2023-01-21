@@ -17,8 +17,8 @@ def thirdpage(request):
 def hnypage(request):
     return render(request, 'hnypage.html')
 
-def homepage(request):
-    return render(request, 'HomePage.html')
+def home(request):
+    return render(request, 'home.html')
 
 def myData(request):
     name = "Mr. Banthat"
@@ -27,10 +27,10 @@ def myData(request):
     education = "ปรัญญาตรี ปีที่ 3"
     status = "Student"
     work = "RMUTI"
-    # return render(request, 'myData.html',
-    #               {'name': name, 'surname': surname, 'gender': gender,
-    #                'education': education, 'status': status, 'work': work})
+    return render(request, 'myData.html',
+                  {'name': name, 'surname': surname, 'gender': gender,
+                   'education': education, 'status': status, 'work': work})
 
-    context = {'name': name, 'surname': surname, 'gender': gender,
-               'education': education, 'status': status, 'work': work}
-    return render(request, 'myData.html', context)
+    # context = {'name': name, 'surname': surname, 'gender': gender,
+    #            'education': education, 'status': status, 'work': work}
+    # return render(request, 'myData.html', context)
